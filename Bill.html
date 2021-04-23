@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>print Bill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <h1>Bill</h1><br>
+    <small>************************************************************</small><br>
+    <label for="cabType">Cab Type           : :</label><span id="cabType"></span></label><br>
+    <label for="distance">Distance          : :</label><span id="distanceToTravel"></span><br>
+    <label for="JourneyDate">Travel Day     : :</label><span id="travelDate"></span></label><br>
+    <label for="PickUpTime">Pick-UP Time    : :</label><span id="pickUpTime"></span></label><br>
+    <label for="Age">Age                    : :</label><span id="age"></span></label><br>
+    <label for="Gst">GST                    : :</label><span id="gst"></span><small>%</small></label><br>
+    <label for="price">Price            (Rs): :</label><span id="price"></span></label><small id="seniorCitizen"></small><br>
+    <small>************************************************************</small><br>
+    <button id="printBill">Print Bill</button><br>
+    <button id="payBill">Pay</button><br> -->
+    <table class="body-wrap">
+        <tbody><tr>
+            <td></td>
+            <td class="container" width="600">
+                <div class="content">
+                    <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td class="content-wrap aligncenter">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                        <td class="content-block">
+                                            <h2>Thanks for using our Cabs</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-block">
+                                            <table class="invoice">
+                                                <tbody><tr>
+                                                    <td><h1>Bill</h1></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table class="invoice-items" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td>Cab Type</td>
+                                                                <td class="alignright"><span id="cabType"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Distance</td>
+                                                                <td class="alignright"><span id="distanceToTravel"></span><small>kms</small></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Travel Day</td>
+                                                                <td class="alignright"><span id="travelDate"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Pick-Up-Time</td>
+                                                                <td class="alignright"><span id="pickUpTime"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Age</td>
+                                                                <td class="alignright"><span id="age"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>GST</td>
+                                                                <td class="alignright"><span id="gst"></span><small>%</small></td>
+                                                            </tr>
+                                                            <tr class="total">
+                                                                <td class="alignright" width="80%">Price(Rs)</td>
+                                                                <td class="alignright"><span id="price"></span><br>
+                                                                <small id="seniorCitizen"></small></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="alignright">
+                                            <button class="btn btn-warning" id="payBill">Pay Bill</button><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="alignleft">
+                                            <button class="btn btn-info" id="printBill">Print Bill</button><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-block">
+                                            vikram Cabs  2021-2099
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div class="footer">
+                        <table width="100%">
+                            <tbody><tr>
+                                <td class="aligncenter content-block">Questions? Email <a href="mailto:">support@vikramcabs.inc</a></td>
+                            </tr>
+                        </tbody></table>
+                    </div></div>
+            </td>
+            <td></td>
+        </tr>
+    </tbody></table>
+    <!-- <button type="submit" onclick="isPeakHour()">click</button> -->
+    <script src="Bill.js"></script>
+    <link rel="stylesheet" href="Bill.css">
+</body>
+</html>

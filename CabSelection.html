@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cab Distance.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CabSelection.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Vikram cabs</span>
+    </nav>
+    <div class="container">
+        <form class="formfeed" action="Booking.html" onsubmit="SelectCab()">
+            <h3>Cab Selection</h3>
+            <br>
+
+            <select class="option" name="cabType" id="cabType">
+                <option disabled>--Select cab type--</option>
+                <option value="MICRO">Micro Cab</option>
+                <option value="MINI">Mini Cab</option>
+                <option value="PRIME">Prime Cab</option>
+            </select>
+            <br>
+            <br>
+            <div class="form-outline mb-4">
+                <input type="number" id="kms" placeholder="Kilometer to travel">
+                <label class="form-label" for="distance">Enter the distance.</label>
+            </div>
+            <button class="btn btn-warning" type="submit" id="selectCab">Estimate</button>
+        </form><br>
+        <p>Your Total Bill Amount is Rs :
+            <span id="calculatedPrice"></span>
+        </p>
+        <a href="Booking.html">Next Page</a>
+    </div>
+
+
+
+    <script src="CabSelection.js"></script>
+</body>
+
+</html>

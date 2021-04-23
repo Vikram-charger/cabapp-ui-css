@@ -1,0 +1,14 @@
+body{
+    background-color: 	#33FF33;
+}
+.container{
+    text-align: center;
+    background-color: #E0EEEE;
+}
+.table{
+    width: 1108px;
+    height: 300px;
+}
+.heading{
+    color: black;
+}
